@@ -1,0 +1,19 @@
+:root {
+  --color-background: #0A0A0A;
+  --color-surface: #121212;
+  --color-primary: #C89B3C;
+  --color-primary-hover: #F0E6D2;
+  --color-text-primary: #F0E6D2;
+  --color-text-secondary: #A09480;
+  --color-border: #3A3A3C;
+}
+
+.theme-dark-gold {
+  --background: var(--color-background);
+  --surface: var(--color-surface);
+  --primary: var(--color-primary);
+  --primary-hover: var(--color-primary-hover);
+  --text-primary: var(--color-text-primary);
+  --text-secondary: var(--color-text-secondary);
+  --border: var(--color-border);
+}

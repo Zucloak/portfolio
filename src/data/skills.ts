@@ -1,0 +1,18 @@
+export const skillsData = [
+  'React',
+  'TypeScript',
+  'JavaScript',
+  'HTML5',
+  'CSS3',
+  'Tailwind CSS',
+  'Sass',
+  'Vite',
+  'Node.js',
+  'Git',
+  'GitHub',
+  'Figma',
+  'UI/UX Design',
+  'Responsive Design',
+  'Performance Optimization',
+  'Accessibility',
+];
