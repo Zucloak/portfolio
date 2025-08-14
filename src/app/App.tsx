@@ -7,20 +7,25 @@ import { ExperiencePage } from '../pages/ExperiencePage';
 import { SkillsPage } from '../pages/SkillsPage';
 import { ContactPage } from '../pages/ContactPage';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Layout />,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: 'about', element: <AboutPage /> },
+        { path: 'projects', element: <ProjectsPage /> },
+        { path: 'experience', element: <ExperiencePage /> },
+        { path: 'skills', element: <SkillsPage /> },
+        { path: 'contact', element: <ContactPage /> },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <Layout />,
-    children: [
-      { index: true, element: <HomePage /> },
-      { path: 'about', element: <AboutPage /> },
-      { path: 'projects', element: <ProjectsPage /> },
-      { path: 'experience', element: <ExperiencePage /> },
-      { path: 'skills', element: <SkillsPage /> },
-      { path: 'contact', element: <ContactPage /> },
-    ],
-  },
-]);
+    basename: import.meta.env.BASE_URL,
+  }
+);
 
 function App() {
   return (

@@ -19,6 +19,7 @@ module.exports = {
     ],
     'react/react-in-jsx-scope': 'off',
     'import/no-unresolved': 'off', // This is handled by TypeScript
+    'react/prop-types': 'off',
   },
   settings: {
     react: {

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { profileData } from '../data/profile';
-import { Section } from '../components/Section';
 
 export const HomePage = () => {
   return (

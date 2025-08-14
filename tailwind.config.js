@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        surface: 'var(--surface)',
-        primary: 'var(--primary)',
-        'primary-hover': 'var(--primary-hover)',
-        'text-primary': 'var(--text-primary)',
-        'text-secondary': 'var(--text-secondary)',
-        border: 'var(--border)',
+        background: '#0A0A0A',
+        surface: '#121212',
+        primary: '#C89B3C',
+        'primary-hover': '#F0E6D2',
+        'text-primary': '#F0E6D2',
+        'text-secondary': '#A09480',
+        border: '#3A3A3C',
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
