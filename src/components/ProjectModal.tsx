@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { Project } from '../data/projects';
+import type { Project } from '../data/projects';
 import { Badge } from './Badge';
 import { FaTimes, FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
