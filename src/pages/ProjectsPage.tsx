@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { projectsData, Project } from '../data/projects';
+import { projectsData } from '../data/projects';
+import type { Project } from '../data/projects';
 import { Section } from '../components/Section';
 import { ProjectCard } from '../components/ProjectCard';
 import { ProjectModal } from '../components/ProjectModal';

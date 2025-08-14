@@ -1,4 +1,4 @@
-import { Project } from '../data/projects';
+import type { Project } from '../data/projects';
 import { Badge } from './Badge';
 
 interface ProjectCardProps {
@@ -7,10 +7,19 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      onClick();
+    }
+  };
+
   return (
     <div
       className="bg-surface rounded-lg overflow-hidden border border-border cursor-pointer transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10"
       onClick={onClick}
+      onKeyDown={handleKeyDown}
+      role="button"
+      tabIndex={0}
     >
       <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
       <div className="p-6">
